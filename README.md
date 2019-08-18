@@ -61,9 +61,10 @@ The linear forward module (vectorized over all the examples) computes the follow
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$Z^{[l]}&space;=&space;W^{[l]}A^{[l-1]}&space;&plus;b^{[l]}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$Z^{[l]}&space;=&space;W^{[l]}A^{[l-1]}&space;&plus;b^{[l]}$$" title="\large $$Z^{[l]} = W^{[l]}A^{[l-1]} +b^{[l]}$$" /></a>
 
-where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$A^{[0]}&space;=&space;X^T$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$A^{[0]}&space;=&space;X^T$" title="\large $A^{[0]} = X^T$" /></a>. And the activation functions:
+where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$&space;A^{[0]}&space;=&space;X^T$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$&space;A^{[0]}&space;=&space;X^T$" title="\large $ A^{[0]} = X^T$" /></a>. And the activation functions:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$A&space;=&space;RELU(Z)&space;=&space;max(0,&space;Z)$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$A&space;=&space;RELU(Z)&space;=&space;max(0,&space;Z)$$" title="\large $$A = RELU(Z) = max(0, Z)$$" /></a>
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$A^{[L]}&space;=&space;sigmoid(Z^{[L]})$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$A^{[L]}&space;=&space;sigmoid(Z^{[L]})$$" title="\large $$A^{[L]} = sigmoid(Z^{[L]})$$" /></a>
 
 ### **Cost function**
