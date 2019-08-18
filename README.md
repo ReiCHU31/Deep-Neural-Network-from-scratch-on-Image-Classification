@@ -7,7 +7,11 @@
 ![](https://storage.googleapis.com/kaggle-competitions/kaggle/3362/media/woof_meow.jpg)
 
 ## INTRODUCTION
-**Dogs vs. Cats** [dataset](https://www.kaggle.com/c/dogs-vs-cats/data) provided by  Microsoft Research contains 25,000 images of dogs and cats with the labels 1 = dog, 0 = cat. 
+**Dogs vs. Cats** [dataset](https://www.kaggle.com/c/dogs-vs-cats/data) provided by  Microsoft Research contains 25,000 images of dogs and cats with the labels 
+* 1 = dog
+* 0 = cat 
+
+### Building Deep Neural Network from scratch
 
 ### *This project explores the applicability of deep neural network by tunning these hyperparameters:*
 1. Learning rate
@@ -15,7 +19,7 @@
 3. Number of nodes in each hiden layers
 4. Number of iterations
 
-### 
+
 
 ## MODEL PERFORMANCE
 
