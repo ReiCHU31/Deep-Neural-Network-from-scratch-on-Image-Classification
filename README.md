@@ -4,7 +4,9 @@
 
 **Deep Neural Network from scratch on Image Classification - Dogs or Cats?** is the project that we finished after the 5th week of studying **Machine Learning**.
 
-![](https://storage.googleapis.com/kaggle-competitions/kaggle/3362/media/woof_meow.jpg)
+<p align="center">
+  <img width="460" height="300" src="https://storage.googleapis.com/kaggle-competitions/kaggle/3362/media/woof_meow.jpg">
+</p>
 
 ## INTRODUCTION
 **Dogs vs. Cats** [dataset](https://www.kaggle.com/c/dogs-vs-cats/data) provided by  Microsoft Research contains 25,000 images of dogs and cats with the labels 
