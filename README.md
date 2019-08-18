@@ -2,7 +2,7 @@
 
 ## **Phuong T.M. Chu and Hai Nguyen**
 
-**Deep Neural Network from scratch on Image Classification - Dogs or Cats?** is the project that we finished after the 6th week of studying **Machine Learning**.
+**Deep Neural Network from scratch on Image Classification - Dogs or Cats?** is the project that we finished after the 5th week of studying **Machine Learning**.
 
 <p align="center">
   <img width="460" height="300" src="https://storage.googleapis.com/kaggle-competitions/kaggle/3362/media/woof_meow.jpg">
