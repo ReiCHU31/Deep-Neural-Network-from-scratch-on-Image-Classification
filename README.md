@@ -11,7 +11,7 @@
 * 1 = dog
 * 0 = cat 
 
-## Building Deep Neural Network from scratch
+## BUILDING DEEP NEURAL NETWORK FROM SCRATCH
 
 In this notebook, we implemented all the functions required to build a deep neural network.
 
