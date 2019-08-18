@@ -41,23 +41,11 @@ The initialization for a deeper L-layer neural network is more complicated becau
 | **Layer 2**|$(n^{[2]}, n^{[1]})$|$(n^{[2]},1)$|$Z^{[2]} = W^{[2]} A^{[1]} + b^{[2]}$|$(n^{[2]}, 209)$|
 |$\vdots$| $\vdots$ | $\vdots$|$\vdots$|$\vdots$|
 |**Layer L-1** | $(n^{[L-1]}, n^{[L-2]})$ | $(n^{[L-1]}, 1)$ | $Z^{[L-1]} =  W^{[L-1]} A^{[L-2]} + b^{[L-1]}$ | $(n^{[L-1]}, 209)$|
-|**Layer L** | $(n^{[L]}, n^{[L-1]})$ | $(n^{[L]}, 1)$|  $Z^{[L]} =  W^{[L]} A^{[L-1]} + b^{[L]}$|$(n^{[L]}, 209)$ |
+|**Layer L** | <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$(n^{[L]},&space;n^{[L-1]})$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$(n^{[L]},&space;n^{[L-1]})$" title="\large $(n^{[L]}, n^{[L-1]})$" /></a>| <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$(n^{[L]},&space;1)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$(n^{[L]},&space;1)$" title="\large $(n^{[L]}, 1)$" /></a>|  <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$Z^{[L]}&space;=&space;W^{[L]}&space;A^{[L-1]}&space;&plus;&space;b^{[L]}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$Z^{[L]}&space;=&space;W^{[L]}&space;A^{[L-1]}&space;&plus;&space;b^{[L]}$" title="\large $Z^{[L]} = W^{[L]} A^{[L-1]} + b^{[L]}$" /></a>|<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$(n^{[L]},&space;209)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$(n^{[L]},&space;209)$" title="\large $(n^{[L]}, 209)$" /></a> |
 
-Remember that when we compute $W X + b$ in python, it carries out broadcasting. For example, if: 
+Remember that when we compute <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$W&space;X&space;&plus;&space;b$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$W&space;X&space;&plus;&space;b$" title="\large $W X + b$" /></a> in python, it carries out broadcasting. For example, if: 
 
-$$ W = \begin{bmatrix}
-    j  & k  & l\\
-    m  & n & o \\
-    p  & q & r 
-\end{bmatrix}\;\;\; X = \begin{bmatrix}
-    a  & b  & c\\
-    d  & e & f \\
-    g  & h & i 
-\end{bmatrix} \;\;\; b =\begin{bmatrix}
-    s  \\
-    t  \\
-    u
-\end{bmatrix}$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$&space;W&space;=&space;\begin{bmatrix}&space;j&space;&&space;k&space;&&space;l\\&space;m&space;&&space;n&space;&&space;o&space;\\&space;p&space;&&space;q&space;&&space;r&space;\end{bmatrix}\;\;\;&space;X&space;=&space;\begin{bmatrix}&space;a&space;&&space;b&space;&&space;c\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{bmatrix}&space;\;\;\;&space;b&space;=\begin{bmatrix}&space;s&space;\\&space;t&space;\\&space;u&space;\end{bmatrix}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$&space;W&space;=&space;\begin{bmatrix}&space;j&space;&&space;k&space;&&space;l\\&space;m&space;&&space;n&space;&&space;o&space;\\&space;p&space;&&space;q&space;&&space;r&space;\end{bmatrix}\;\;\;&space;X&space;=&space;\begin{bmatrix}&space;a&space;&&space;b&space;&&space;c\\&space;d&space;&&space;e&space;&&space;f&space;\\&space;g&space;&&space;h&space;&&space;i&space;\end{bmatrix}&space;\;\;\;&space;b&space;=\begin{bmatrix}&space;s&space;\\&space;t&space;\\&space;u&space;\end{bmatrix}$$" title="\large $$ W = \begin{bmatrix} j & k & l\\ m & n & o \\ p & q & r \end{bmatrix}\;\;\; X = \begin{bmatrix} a & b & c\\ d & e & f \\ g & h & i \end{bmatrix} \;\;\; b =\begin{bmatrix} s \\ t \\ u \end{bmatrix}$$" /></a>
 
 Then <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$WX&space;&plus;&space;b$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$WX&space;&plus;&space;b$" title="\large $WX + b$" /></a> will be:
 
