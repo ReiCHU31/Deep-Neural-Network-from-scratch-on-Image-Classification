@@ -71,7 +71,7 @@ where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$J&space;=&space;-\frac1m\sum&space;\bigg(&space;Y&space;\odot&space;log(A^{[L]})&space;&plus;&space;(1-Y)&space;\odot&space;log(1-A^{[L]})&space;\bigg)$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$J&space;=&space;-\frac1m\sum&space;\bigg(&space;Y&space;\odot&space;log(A^{[L]})&space;&plus;&space;(1-Y)&space;\odot&space;log(1-A^{[L]})&space;\bigg)$$" title="\large $$J = -\frac1m\sum \bigg( Y \odot log(A^{[L]}) + (1-Y) \odot log(1-A^{[L]}) \bigg)$$" /></a>
 
-> Note that <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$\odot$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$\odot$" title="\large $\odot$" /></a> denotes elementwise multiplication.
+Note that <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$\odot$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$\odot$" title="\large $\odot$" /></a> denotes elementwise multiplication.
 
 ### **Backward propagation**
 
