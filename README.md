@@ -14,7 +14,7 @@
 * 0 = cat 
 
 ### Project goals:
-1. Building a b**deep neural network from scratch** to classify dogs and cats images
+1. Building a basic **deep neural network from scratch** to classify dogs and cats images
 
 2. **Tunning the hyperparameters** of the model in order to achieve high accuracy. This project explores the applicability of deep neural network by tunning these hyperparameters:
     * Learning rate
