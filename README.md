@@ -86,13 +86,10 @@ The three outputs <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&sp
 <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$&space;db^{[l]}&space;=&space;\frac{\partial&space;\mathcal{L}&space;}{\partial&space;b^{[l]}}&space;=&space;\frac{1}{m}&space;\sum_{i&space;=&space;1}^{m}&space;dZ^{[l](i)}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$&space;db^{[l]}&space;=&space;\frac{\partial&space;\mathcal{L}&space;}{\partial&space;b^{[l]}}&space;=&space;\frac{1}{m}&space;\sum_{i&space;=&space;1}^{m}&space;dZ^{[l](i)}$$" title="\large $$ db^{[l]} = \frac{\partial \mathcal{L} }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}$$" /></a>
 
 
-
-## MODEL PERFORMANCE
-
 ## CONCLUSION
 We achieved the **Accuracy score of 66.6%** which is **better than** the Accuracy score of Logistic Regression Model in **sklearn (57.6%)**. Our hyperparameters are:
 
-    * Learning rate = `0.011`
-    * Number of hidden layers = `5`
-    * Number of nodes in each hiden layers = `[32,64,128,256,512]`
-    * Number of iterations = `1700`
+* Learning rate = `0.011`
+* Number of hidden layers = `5`
+* Number of nodes in each hiden layers = `[32,64,128,256,512]`
+* Number of iterations = `1700`
