@@ -90,5 +90,8 @@ The three outputs <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&sp
 ## MODEL PERFORMANCE
 
 ## CONCLUSION
-The current literature suggests machine classifiers can score above [80% accuracy](chrome-extension://cbnaodkpfinfiipjblikofhlhlcickei/src/pdfviewer/web/viewer.html?file=http://xenon.stanford.edu/~pgolle/papers/dogcat.pdf) on this task.
-We successfully achieved the accuracy of % with these detailed hyperparameters:
+We achieved the **Accuracy score of 66.6%** which is **better than** the Accuracy score of Logistic Regression Model in **sklearn (57.6%)**. Our hyperparameters are:
+    * Learning rate = `0.011`
+    * Number of hidden layers = `5`
+    * Number of nodes in each hiden layers = `[32,64,128,256,512]`
+    * Number of iterations = `1700`
