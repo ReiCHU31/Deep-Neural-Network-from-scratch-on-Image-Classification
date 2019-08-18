@@ -11,6 +11,15 @@
 * 1 = dog
 * 0 = cat 
 
+### Project goals:
+1. Building a deep neural network from scratch to classify dogs and cats images
+
+2. Tunning the hyperparameters of the model in order to achieve high accuracy. This project explores the applicability of deep neural network by tunning these hyperparameters:
+    * Learning rate
+    * Number of hidden layers
+    * Number of nodes in each hiden layers
+    * Number of iterations
+
 ## BUILDING DEEP NEURAL NETWORK FROM SCRATCH
 
 In this notebook, we implemented all the functions required to build a deep neural network.
@@ -86,13 +95,6 @@ The three outputs $(dZ^{[l]}, dW^{[l]}, db^{[l]})$ are computed using the input 
 $$dZ^{[l]} =   W^{[l+1]^T}dZ^{[l+1]} \odot g^{[l]'}(Z^{[l]})$$
 $$ dW^{[l]} = \frac{\partial \mathcal{L} }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T}$$
 $$ db^{[l]} = \frac{\partial \mathcal{L} }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}$$
-
-
-### *This project explores the applicability of deep neural network by tunning these hyperparameters:*
-1. Learning rate
-2. Number of hidden layers
-3. Number of nodes in each hiden layers
-4. Number of iterations
 
 
 
