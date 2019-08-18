@@ -71,26 +71,28 @@ Then <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}
 
 The linear forward module (vectorized over all the examples) computes the following equations:
 
-$$Z^{[l]} = W^{[l]}A^{[l-1]} +b^{[l]}$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$Z^{[l]}&space;=&space;W^{[l]}A^{[l-1]}&space;&plus;b^{[l]}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$Z^{[l]}&space;=&space;W^{[l]}A^{[l-1]}&space;&plus;b^{[l]}$$" title="\large $$Z^{[l]} = W^{[l]}A^{[l-1]} +b^{[l]}$$" /></a>
 
-where $A^{[0]} = X^T$. And the activation functions:
+where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$A^{[0]}&space;=&space;X^T$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$A^{[0]}&space;=&space;X^T$" title="\large $A^{[0]} = X^T$" /></a>. And the activation functions:
 
-$$A = RELU(Z) = max(0, Z)$$
-$$A^{[L]} = sigmoid(Z^{[L]})$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$A&space;=&space;RELU(Z)&space;=&space;max(0,&space;Z)$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$A&space;=&space;RELU(Z)&space;=&space;max(0,&space;Z)$$" title="\large $$A = RELU(Z) = max(0, Z)$$" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$A^{[L]}&space;=&space;sigmoid(Z^{[L]})$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$A^{[L]}&space;=&space;sigmoid(Z^{[L]})$$" title="\large $$A^{[L]} = sigmoid(Z^{[L]})$$" /></a>
 
 ### **Cost function**
 
-$$J = -\frac1m\sum \bigg( Y \odot log(A^{[L]}) + (1-Y) \odot log(1-A^{[L]}) \bigg)$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$J&space;=&space;-\frac1m\sum&space;\bigg(&space;Y&space;\odot&space;log(A^{[L]})&space;&plus;&space;(1-Y)&space;\odot&space;log(1-A^{[L]})&space;\bigg)$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$J&space;=&space;-\frac1m\sum&space;\bigg(&space;Y&space;\odot&space;log(A^{[L]})&space;&plus;&space;(1-Y)&space;\odot&space;log(1-A^{[L]})&space;\bigg)$$" title="\large $$J = -\frac1m\sum \bigg( Y \odot log(A^{[L]}) + (1-Y) \odot log(1-A^{[L]}) \bigg)$$" /></a>
 
-> Note that $\odot$ denotes elementwise multiplication.
+> Note that <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$\odot$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$\odot$" title="\large $\odot$" /></a> denotes elementwise multiplication.
 
 ### **Backward propagation**
 
-The three outputs $(dZ^{[l]}, dW^{[l]}, db^{[l]})$ are computed using the input $dZ^{[l]}$.Here are the formulas you need:
+The three outputs <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$(dZ^{[l]},&space;dW^{[l]},&space;db^{[l]})$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$(dZ^{[l]},&space;dW^{[l]},&space;db^{[l]})$" title="\large $(dZ^{[l]}, dW^{[l]}, db^{[l]})$" /></a> are computed using the input <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$dZ^{[l]}$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$dZ^{[l]}$" title="\large $dZ^{[l]}$" /></a>.Here are the formulas we need:
 
-$$dZ^{[l]} =   W^{[l+1]^T}dZ^{[l+1]} \odot g^{[l]'}(Z^{[l]})$$
-$$ dW^{[l]} = \frac{\partial \mathcal{L} }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T}$$
-$$ db^{[l]} = \frac{\partial \mathcal{L} }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$dZ^{[l]}&space;=&space;W^{[l&plus;1]^T}dZ^{[l&plus;1]}&space;\odot&space;g^{[l]'}(Z^{[l]})$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$dZ^{[l]}&space;=&space;W^{[l&plus;1]^T}dZ^{[l&plus;1]}&space;\odot&space;g^{[l]'}(Z^{[l]})$$" title="\large $$dZ^{[l]} = W^{[l+1]^T}dZ^{[l+1]} \odot g^{[l]'}(Z^{[l]})$$" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$&space;dW^{[l]}&space;=&space;\frac{\partial&space;\mathcal{L}&space;}{\partial&space;W^{[l]}}&space;=&space;\frac{1}{m}&space;dZ^{[l]}&space;A^{[l-1]&space;T}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$&space;dW^{[l]}&space;=&space;\frac{\partial&space;\mathcal{L}&space;}{\partial&space;W^{[l]}}&space;=&space;\frac{1}{m}&space;dZ^{[l]}&space;A^{[l-1]&space;T}$$" title="\large $$ dW^{[l]} = \frac{\partial \mathcal{L} }{\partial W^{[l]}} = \frac{1}{m} dZ^{[l]} A^{[l-1] T}$$" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$&space;db^{[l]}&space;=&space;\frac{\partial&space;\mathcal{L}&space;}{\partial&space;b^{[l]}}&space;=&space;\frac{1}{m}&space;\sum_{i&space;=&space;1}^{m}&space;dZ^{[l](i)}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$&space;db^{[l]}&space;=&space;\frac{\partial&space;\mathcal{L}&space;}{\partial&space;b^{[l]}}&space;=&space;\frac{1}{m}&space;\sum_{i&space;=&space;1}^{m}&space;dZ^{[l](i)}$$" title="\large $$ db^{[l]} = \frac{\partial \mathcal{L} }{\partial b^{[l]}} = \frac{1}{m} \sum_{i = 1}^{m} dZ^{[l](i)}$$" /></a>
 
 
 
