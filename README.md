@@ -14,7 +14,7 @@
 * 0 = cat 
 
 ### Project goals:
-1. Building a **deep neural network from scratch** to classify dogs and cats images
+1. Building a b**deep neural network from scratch** to classify dogs and cats images
 
 2. **Tunning the hyperparameters** of the model in order to achieve high accuracy. This project explores the applicability of deep neural network by tunning these hyperparameters:
     * Learning rate
@@ -91,5 +91,5 @@ We achieved the **Accuracy score of 66.6%** which is **better than** the Accurac
 
 * Learning rate = `0.011`
 * Number of hidden layers = `5`
-* Number of nodes in each hiden layers = `[32,64,128,256,512]`
+* Number of nodes in each hidden layers = `[32,64,128,256,512]`
 * Number of iterations = `1700`
