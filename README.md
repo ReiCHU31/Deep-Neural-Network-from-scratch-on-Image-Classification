@@ -12,9 +12,9 @@
 * 0 = cat 
 
 ### Project goals:
-1. Building a deep neural network from scratch to classify dogs and cats images
+1. Building a **deep neural network from scratch** to classify dogs and cats images
 
-2. Tunning the hyperparameters of the model in order to achieve high accuracy. This project explores the applicability of deep neural network by tunning these hyperparameters:
+2. **Tunning the hyperparameters** of the model in order to achieve high accuracy. This project explores the applicability of deep neural network by tunning these hyperparameters:
     * Learning rate
     * Number of hidden layers
     * Number of nodes in each hiden layers
@@ -59,13 +59,9 @@ $$ W = \begin{bmatrix}
     u
 \end{bmatrix}$$
 
-Then $WX + b$ will be:
+Then <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$WX&space;&plus;&space;b$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$WX&space;&plus;&space;b$" title="\large $WX + b$" /></a> will be:
 
-$$ WX + b = \begin{bmatrix}
-    (ja + kd + lg) + s  & (jb + ke + lh) + s  & (jc + kf + li)+ s\\
-    (ma + nd + og) + t & (mb + ne + oh) + t & (mc + nf + oi) + t\\
-    (pa + qd + rg) + u & (pb + qe + rh) + u & (pc + qf + ri)+ u
-\end{bmatrix}$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{120}&space;\large&space;$$&space;WX&space;&plus;&space;b&space;=&space;\begin{bmatrix}&space;(ja&space;&plus;&space;kd&space;&plus;&space;lg)&space;&plus;&space;s&space;&&space;(jb&space;&plus;&space;ke&space;&plus;&space;lh)&space;&plus;&space;s&space;&&space;(jc&space;&plus;&space;kf&space;&plus;&space;li)&plus;&space;s\\&space;(ma&space;&plus;&space;nd&space;&plus;&space;og)&space;&plus;&space;t&space;&&space;(mb&space;&plus;&space;ne&space;&plus;&space;oh)&space;&plus;&space;t&space;&&space;(mc&space;&plus;&space;nf&space;&plus;&space;oi)&space;&plus;&space;t\\&space;(pa&space;&plus;&space;qd&space;&plus;&space;rg)&space;&plus;&space;u&space;&&space;(pb&space;&plus;&space;qe&space;&plus;&space;rh)&space;&plus;&space;u&space;&&space;(pc&space;&plus;&space;qf&space;&plus;&space;ri)&plus;&space;u&space;\end{bmatrix}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;$$&space;WX&space;&plus;&space;b&space;=&space;\begin{bmatrix}&space;(ja&space;&plus;&space;kd&space;&plus;&space;lg)&space;&plus;&space;s&space;&&space;(jb&space;&plus;&space;ke&space;&plus;&space;lh)&space;&plus;&space;s&space;&&space;(jc&space;&plus;&space;kf&space;&plus;&space;li)&plus;&space;s\\&space;(ma&space;&plus;&space;nd&space;&plus;&space;og)&space;&plus;&space;t&space;&&space;(mb&space;&plus;&space;ne&space;&plus;&space;oh)&space;&plus;&space;t&space;&&space;(mc&space;&plus;&space;nf&space;&plus;&space;oi)&space;&plus;&space;t\\&space;(pa&space;&plus;&space;qd&space;&plus;&space;rg)&space;&plus;&space;u&space;&&space;(pb&space;&plus;&space;qe&space;&plus;&space;rh)&space;&plus;&space;u&space;&&space;(pc&space;&plus;&space;qf&space;&plus;&space;ri)&plus;&space;u&space;\end{bmatrix}$$" title="\large $$ WX + b = \begin{bmatrix} (ja + kd + lg) + s & (jb + ke + lh) + s & (jc + kf + li)+ s\\ (ma + nd + og) + t & (mb + ne + oh) + t & (mc + nf + oi) + t\\ (pa + qd + rg) + u & (pb + qe + rh) + u & (pc + qf + ri)+ u \end{bmatrix}$$" /></a>
 
 ### **Mathematical expression of the algorithm**:
 
