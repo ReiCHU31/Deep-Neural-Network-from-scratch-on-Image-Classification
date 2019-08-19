@@ -87,9 +87,9 @@ The three outputs <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&sp
 
 
 ## CONCLUSION
-We achieved the **Accuracy score of 66.8%** which is **better than** the Accuracy score of Logistic Regression Model in **sklearn (57.6%)**. Our hyperparameters are:
+We achieved the **Accuracy score of 65.2%** which is **better than** the Accuracy score of Logistic Regression Model in **sklearn (57.6%)**. Our hyperparameters are:
 
-* Learning rate = `0.011`
+* Learning rate = `0.001`
 * Number of hidden layers = `5`
 * Number of nodes in each hidden layers = `[32,64,128,256,512]`
-* Number of iterations = `1900`
+* Number of iterations = `2500`
